@@ -12,3 +12,6 @@ luego, los tres juntos ultimamos detalles y revisamos que todo funcionará, y po
 
 A continuación se detallan las pruebas:
 ![image](https://user-images.githubusercontent.com/97895242/157939155-0fbd298d-2433-491e-9e4b-db9fc8ab5dcb.png)
+
+Video Presentación:
+https://drive.google.com/file/d/1E42DQNeWyxv0P-5NZDXelB1nV_zTvB0P/view?usp=sharing
