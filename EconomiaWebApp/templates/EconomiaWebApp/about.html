@@ -1,0 +1,28 @@
+{% extends "EconomiaWebApp/padre.html"%}
+
+{%load static%} 
+{% block Titulo %}
+SOBRE MI
+{% endblock Titulo %}
+{% block ContenidoQueCambia %}
+   <!-- Heading -->
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{%static 'EconomiaWebApp/img/about.jpg'%}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper">ASESORES FINANCIEROS</span>
+          </h2>
+          <p class="mb-3">Nos presentamos, somos un grupo de Asesores Financieros y Económicos de la Ciudad de Córdoba.
+          <p class="mb-3">Nuestra idea es que este Blog sirva para introducir más gente en el gran mundo de la economía y las finanzas.
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+{% endblock ContenidoQueCambia %}

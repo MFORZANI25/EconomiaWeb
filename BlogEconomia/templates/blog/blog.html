@@ -1,0 +1,50 @@
+{% extends "EconomiaWebApp/padre.html"%}
+
+{%load static%} 
+{% block Titulo %}
+BLOG
+{% endblock Titulo %}
+{% block ContenidoQueCambia %}
+    {% if request.user.is_authenticated%} 
+    <B><FONT COLOR="white">Hola {{user.username}}, bienvenid@ a nuestro sistema </FONT>
+    {% endif %}
+    {%for blog in object_list %}
+    
+    <section class="page-section clearfix">
+      <div class="container">
+        <div class="intro">
+          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{blog.imagen.url}}" alt="" style="width: 70%;">
+          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+            <h2 class="section-heading mb-4; font-size: 0.4cm" > 
+              <span class="section-heading-title">{{blog.Titulo}} </span>
+            </p> 
+              <span class="section-heading-upper">{{blog.Subtitulo}}</span>
+            </h2>
+              <p>
+                <a href="{% url 'Detail' blog.id %}">Leer más</a> 
+                <a href="{% url 'Edit' blog.id %}">Editar</a> 
+                <a href="{% url 'Delete' blog.id %}">Eliminar</a>
+
+            </p>
+          </h2>
+          <div style="text-align: left; font-size: 0.4cm">
+            Autor: {{blog.autor}}
+        </div>
+        <div style="text-align: left; font-size: 0.4cm">
+          {%for categoria in blog.categoria.all%}
+            {{categoria.nombre}}
+          {% endfor %}
+      </div>
+      <div style="text-align: left; font-size: 0.4cm">
+        Fecha: {{blog.fecha}}
+      </div>
+    </div>
+  </section>
+
+    {% endfor %}
+
+  
+    <a href="{% url 'New' %}">Crear</a> 
+
+{% endblock ContenidoQueCambia %}
+

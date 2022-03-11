@@ -1,0 +1,30 @@
+{% extends "EconomiaWebApp/padre.html"%}
+
+{%load static%} 
+{% block Titulo %}
+PERFIL DE {{usuario}}
+{% endblock Titulo %}
+
+{% block ContenidoQueCambia %}
+   <!-- Heading -->
+   <form action ="" method="POST">
+    {% csrf_token %}
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{%static 'EconomiaWebApp/img/login.jpg'%}" alt="" style="width: 60%;">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper">EDITÁ TU PERFIL</span>
+            <span class="section-heading-lower, font-size: 0.5 cm">{{form.as_table}}</span>
+          </h2>
+          <input type="submit" value="Enviar">
+        </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+{% endblock ContenidoQueCambia %}

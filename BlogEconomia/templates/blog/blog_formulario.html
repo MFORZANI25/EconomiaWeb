@@ -1,0 +1,22 @@
+{% extends "EconomiaWebApp/padre.html"%}
+
+{%load static%} 
+
+{% block ContenidoQueCambia %}
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4" >
+                    </h2>
+            <div id="form" >
+                <form method="post" id="form_coords" id="upload_file" enctype="multipart/form-data" >{% csrf_token %}
+                    {{ form.media }} 
+                    {{ form.as_p }}
+                    <input type="submit" value="Enviar">
+                </form>
+          <p>
+            <a href="{% url 'Blog' %}">Cancelar</a>
+        </p>
+
+{% endblock ContenidoQueCambia %}
