@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/97895242/157939155-0fbd298d-2433-491e-9e4b-db9fc8ab5dcb.png)
 # EconomiaWeb
 
 El Proyecto EconomiaWeb consiste en un blog de Economia y Finanzas, para compartir ultimas novedades. Fue realizado por los alumnos Ortolani Juan Martin, Pereyra Esquivel Sofia y Forzani Mariana, lo realizabamos vía reuniones de teams.
